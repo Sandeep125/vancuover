@@ -1,0 +1,29 @@
+<ion-view view-title="Create Event">
+      <ion-content class="padding">
+        <div class="list list-inset">
+            <label class="item item-input">
+                  <button class="button button-full bar-pink" ng-click="takePhoto()">
+                        Take Photo
+                  </button>
+            </label>
+            <label class="item item-input">
+                  <button class="button button-full bar-pink" ng-click="choosePhoto()">
+                      Choose Photo
+                  </button>
+            </label>
+            <label class="item item-input">
+                  <center>
+                  <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+                  </center>
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Event Title" ng-model="data.title">
+            </label>
+            <label class="item item-input">
+                <input type="hidden" name="exact_date" value="{{data.date | date: 'yyyy-MM-dd'}}" />
+                <input ng-click="openDatePicker()" type="text" placeholder="Event Date" value="{{data.date | date: 'dd-MM-yyyy'}}" >
+            </label>      
+        </div>
+        <button class="button button-block button-positive" ng-click="create(data)">Create</button>
+      </ion-content>
+</ion-view>

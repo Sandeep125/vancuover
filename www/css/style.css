@@ -1,0 +1,33 @@
+/* Empty. Add your own CSS if you like */
+.bar-pink{
+
+	background : #ee008c;
+	color: #FFF;
+        }
+        
+.bar-pink .title{
+	color: #FFF;
+	font-size: 25px;
+}
+
+.sidemenu .content ion-item{
+	background: #3498db;
+}
+
+.sidemenu .item, .sidemenu .item-content {
+    background-color: #3498db;
+    color: #FFF;
+    font-size: 15px;
+    border: none;
+}
+
+.button-clear.button-clear{
+color: #b2b2b2;
+}
+
+.tabs-pink > .tabs{
+    border-color: #ee008c;
+    background-color: #ee008c;
+    background-image: linear-gradient(0deg, #ee008c, #ee008c 50%, transparent 50%);
+    color: #FFF;
+}

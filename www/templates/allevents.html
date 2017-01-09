@@ -1,0 +1,14 @@
+<ion-view view-title="All Events" name="dashboard-view">
+  <ion-content class="padding">
+    <div ng-if="no_items">{{msg}}</div>
+      <div class="list">
+        <div ng-repeat="item in items">  
+          <a class="item item-thumbnail-left" href="#/home/allevent/{{item.id}}">
+            <img src="{{root}}{{item.photo}}" />
+            <h2>{{item.title}}</h2>
+            <p>{{item.description | limitTo : 15 }}</p>
+          </a>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>
